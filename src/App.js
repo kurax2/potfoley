@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import { Container, Typography } from '@mui/material';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container 
+      sx={{ 
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        bgcolor: "beige"
+      
+      }}>
+    <Typography 
+      sx={{
+        width: "fit-content",
+        py: 2,
+        px: 6,
+        bgcolor: "#1C1C1E",
+        color: "white",
+        borderRadius: "8px",
+        fontSize: "2rem",
+        ":hover": {bgcolor: "darkgrey"}
+      }}
+      >hi there</Typography> 
+  </Container>
   );
+  
+
 }
 
 export default App;
